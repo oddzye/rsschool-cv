@@ -14,9 +14,20 @@ h1, h2 {
   border-bottom: 1px solid #eaecef;
 }
 
+h3 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 16px;
   margin-top: 32px;
+}
+
+.container li+li {
+  margin-top: .25em;
 }
