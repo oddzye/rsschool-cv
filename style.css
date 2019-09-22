@@ -23,9 +23,8 @@ h3 {
 
 .container {
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 32px auto;
   padding: 0 16px;
-  margin-top: 32px;
 }
 
 .container li+li {
