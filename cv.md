@@ -86,3 +86,16 @@ I use this technologies in my job:
     })
 }());
 ```
+
+### Experience
+   June 2018 — June 2019. OOO Melsytech. I worked at the company which is doing medicine and creating own laser systems for cosmetology.
+    July 2019 - present time. Sberbank. I take part in creating Sberbank Business Online - application for helping people which are have business.
+    Source code - all source you can find in my github account.
+    
+### Education: 
+   Courses: codeacademy, learnjs, html academy within certificates
+    University: Bachelor degree in computer science, Lobachevskiy University in Nizhniy Novgorod.
+
+### English  
+   I am trying to speak with native speakers on some services like italki, skyeng and others. Also i am using "Anki" - it is application for make your vocabulary better
+   and other services for improving
