@@ -31,3 +31,8 @@ h3 {
 .container li+li {
   margin-top: .25em;
 }
+
+.container img.resume-avatar {
+  margin-top: 30px;
+  border-radius: 15px;
+}
