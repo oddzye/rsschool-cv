@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend developer resume</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dmitry Tsarev. Junior frontend developer</h1>
+    </header>
+    <img class="resume-avatar" width="200" src="./avatar-resume.jpeg">
+    <section id="contacts">
+      <h3>Contacts</h3>
+      <ul>
+        <li>Skype: tzariov.dmitry@yandex.ru</li>
+        <li>Phone: 89040432785</li>
+        <li>Mail: tzariov.dmitry.work@yandex.ru</li>
+      </ul>
+    </section>
+    <section id="summary">
+      <h3>Summary</h3>
+      <p>My main goal is why i started to learn programming languages and frontend development - helping to people and make them lives more comfortable. I am always doing self-education (learning English, some special technologies and also i like to read classic literature and books about business experience)</p>
+    </section>
+    <section id="skills">
+      <h3>Skills</h3>
+      <p>I use this technologies in my job:</p>
+      <br>
+      <ul>
+        <li>Base knowledge:
+          <ul>
+            <li>HTML / CSS including HTML5 and CSS3 standards.</li>
+            <li>Vanilla JS</li>
+          </ul>
+        </li>
+        <li>Frameworks
+          <ul>
+            <li>Bootstrap, UI-Materialize</li>
+            <li>React, Redux</li>
+            <li>LESS, SASS preprocessors</li>
+          </ul>
+        </li>
+        <li>Methodologies
+          <ul>
+            <li>BEM</li>
+          </ul>
+        </li>
+        <li>Design
+          <ul>
+            <li>Photoshop, Figma.</li>
+            <li>UX / UI design patterns/li>
+          </ul>
+        </li>
+        <li>For building apps
+          <ul>
+            <li>Task manager - Gulp</li>
+            <li>Webpack</li>
+          </ul>
+        </li>
+        <li>Version Control
+          <ul>
+            <li>Git</li>
+          </ul>
+        </li>
+        <li>OS
+          <ul>
+            <li>Main: Windows</li>
+            <li>Also i use Linux for practice with bash</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section id="code-examples">
+      <h3>Code examples</h3>
+      <pre>
+        <code>
+            (function () {
+              const input = document.getElementById('add-item-input');
+              const addBtn = document.querySelector('.add-btn');
+              const ul = document.querySelector('.todo-list');
+          
+              let taskName = '';
+          
+              input.addEventListener('change', ({target: {value}}) => {
+                  taskName = value;
+              })
+          
+              addBtn.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  const li = document.createElement('li');
+                  const removeBtn = document.createElement('button');
+                  const checkBox = document.createElement('input');
+                  const liText = document.createTextNode(`${taskName}`);
+                  const removeBtnText = document.createTextNode(`×`);
+                  removeBtn.classList.add('remove-btn')
+                  checkBox.setAttribute('type', 'checkbox');
+          
+          
+                  removeBtn.addEventListener('click', (e) => {
+                      li.remove();
+                  })
+          
+                  checkBox.addEventListener('change', ({ target: {checked}}) => {
+                      if (checked) {
+                          li.style.textDecoration = 'line-through';
+                      }
+                      else {
+                          li.style.textDecoration = 'none';
+                      }
+                      
+                  })
+          
+                  li.appendChild(checkBox);
+                  li.appendChild(liText);
+                  li.appendChild(removeBtn);
+          
+                  removeBtn.appendChild(removeBtnText);
+          
+                  if (taskName.length >= 3) {
+                      ul.appendChild(li);
+                  }
+                  
+                  taskName = '';
+                  input.value = '';
+              })
+          }());
+        </code>
+      </pre>
+    </section>
+    <section id="experience">
+      <h3>Experience</h3>
+      <p>June 2018 — June 2019. OOO Melsytech. I worked at the company which is doing medicine and creating own laser systems for cosmetology. July 2019 - present time. Sberbank. I take part in creating Sberbank Business Online - application for helping people which are have business. Source code - all source you can find in my github account.</p>
+    </section>
+    <section id="education">
+      <h3>Education</h3>
+      <p>Courses: codeacademy, learnjs, html academy within certificates University: Bachelor degree in computer science, Lobachevskiy University in Nizhniy Novgorod.</p>
+    </section>
+    <section id="english">
+      <h3>English</h3>
+      <p>I am trying to speak with native speakers on some services like italki, skyeng and others. Also i am using “Anki” - it is application for make your vocabulary better and other services for improving</p>
+    </section>
+  </div>
+</body>
+</html>
